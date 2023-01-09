@@ -1,0 +1,91 @@
+~/SystemCommands/NewFolder$ cd ..
+~/SystemCommands$ ls
+main.sh  NewFolder  renamefile1  replit.nix
+~/SystemCommands$ ls -li
+total 8
+263 -rw-r--r-- 1 runner runner  16 Dec  9 20:17 main.sh
+264 drwx------ 1 runner runner   0 Jan  9 17:43 NewFolder
+266 -rw-r--r-- 1 runner runner   0 Jan  9 17:38 renamefile1
+261 -rw-r--r-- 1 runner runner 107 Jan  9 17:15 replit.nix
+~/SystemCommands$ touch file1
+~/SystemCommands$ ls -li
+total 8
+268 -rw-r--r-- 1 runner runner   0 Jan  9 17:44 file1
+263 -rw-r--r-- 1 runner runner  16 Dec  9 20:17 main.sh
+264 drwx------ 1 runner runner   0 Jan  9 17:43 NewFolder
+266 -rw-r--r-- 1 runner runner   0 Jan  9 17:38 renamefile1
+261 -rw-r--r-- 1 runner runner 107 Jan  9 17:15 replit.nix
+~/SystemCommands$ chmod 700 file1
+~/SystemCommands$ ls -li
+total 8
+268 -rwx------ 1 runner runner   0 Jan  9 17:44 file1
+263 -rw-r--r-- 1 runner runner  16 Dec  9 20:17 main.sh
+264 drwx------ 1 runner runner   0 Jan  9 17:43 NewFolder
+266 -rw-r--r-- 1 runner runner   0 Jan  9 17:38 renamefile1
+261 -rw-r--r-- 1 runner runner 107 Jan  9 17:15 replit.nix
+~/SystemCommands$ ls -lia
+total 12
+256 drwxr-xr-x 1 runner runner 110 Jan  9 17:44 .
+  2 drwxrwxrwx 1 runner runner  80 Jan  9 17:39 ..
+257 drwxr-xr-x 1 runner runner  12 Oct 12  2021 .cache
+268 -rwx------ 1 runner runner   0 Jan  9 17:44 file1
+263 -rw-r--r-- 1 runner runner  16 Dec  9 20:17 main.sh
+264 drwx------ 1 runner runner   0 Jan  9 17:43 NewFolder
+266 -rw-r--r-- 1 runner runner   0 Jan  9 17:38 renamefile1
+262 -rw-r--r-- 1 runner runner  81 Dec  9 20:14 .replit
+261 -rw-r--r-- 1 runner runner 107 Jan  9 17:15 replit.nix
+~/SystemCommands$ cd NewFolder/
+~/SystemCommands/NewFolder$ ls
+~/SystemCommands/NewFolder$ touch file2
+~/SystemCommands/NewFolder$ chmod 700 file2
+~/SystemCommands/NewFolder$ ls
+file2
+~/SystemCommands/NewFolder$ ls -lia
+total 0
+264 drwx------ 1 runner runner  10 Jan  9 17:45 .
+256 drwxr-xr-x 1 runner runner 110 Jan  9 17:44 ..
+269 -rwx------ 1 runner runner   0 Jan  9 17:45 file2
+~/SystemCommands/NewFolder$ cd ..
+~/SystemCommands$ ls-lia
+bash: ls-lia: command not found
+~/SystemCommands$ ^C
+~/SystemCommands$ ls -lia
+total 12
+256 drwxr-xr-x 1 runner runner 110 Jan  9 17:44 .
+  2 drwxrwxrwx 1 runner runner  80 Jan  9 17:39 ..
+257 drwxr-xr-x 1 runner runner  12 Oct 12  2021 .cache
+268 -rwx------ 1 runner runner   0 Jan  9 17:44 file1
+263 -rw-r--r-- 1 runner runner  16 Dec  9 20:17 main.sh
+264 drwx------ 1 runner runner  10 Jan  9 17:45 NewFolder
+266 -rw-r--r-- 1 runner runner   0 Jan  9 17:38 renamefile1
+262 -rw-r--r-- 1 runner runner  81 Dec  9 20:14 .replit
+261 -rw-r--r-- 1 runner runner 107 Jan  9 17:15 replit.nix
+~/SystemCommands$ cd NewFolder/
+~/SystemCommands/NewFolder$ mkdir newfolder2
+~/SystemCommands/NewFolder$ cd ..
+~/SystemCommands$ ls -lia
+total 12
+256 drwxr-xr-x 1 runner runner 110 Jan  9 17:44 .
+  2 drwxrwxrwx 1 runner runner  80 Jan  9 17:39 ..
+257 drwxr-xr-x 1 runner runner  12 Oct 12  2021 .cache
+268 -rwx------ 1 runner runner   0 Jan  9 17:44 file1
+263 -rw-r--r-- 1 runner runner  16 Dec  9 20:17 main.sh
+264 drwx------ 1 runner runner  30 Jan  9 17:47 NewFolder
+266 -rw-r--r-- 1 runner runner   0 Jan  9 17:38 renamefile1
+262 -rw-r--r-- 1 runner runner  81 Dec  9 20:14 .replit
+261 -rw-r--r-- 1 runner runner 107 Jan  9 17:15 replit.nix
+~/SystemCommands$ cd NewFolder/
+~/SystemCommands/NewFolder$ ls
+file2  newfolder2
+~/SystemCommands/NewFolder$ cd newfolder2/
+~/.../NewFolder/newfolder2$ ls -lia
+total 0
+270 drwxr-xr-x 1 runner runner  0 Jan  9 17:47 .
+264 drwx------ 1 runner runner 30 Jan  9 17:47 ..
+~/.../NewFolder/newfolder2$ cd ..
+~/SystemCommands/NewFolder$ ls -lia
+total 0
+264 drwx------ 1 runner runner  30 Jan  9 17:47 .
+256 drwxr-xr-x 1 runner runner 110 Jan  9 17:44 ..
+269 -rwx------ 1 runner runner   0 Jan  9 17:45 file2
+270 drwxr-xr-x 1 runner runner   0 Jan  9 17:47 newfolder2
