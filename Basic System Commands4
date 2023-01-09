@@ -1,0 +1,56 @@
+~/SystemCommands$ pwd
+/home/runner/SystemCommands
+~/SystemCommands$ ls
+file1  main.sh  NewFolder  renamefile1  replit.nix
+~/SystemCommands$ less file1
+~/SystemCommands$ file file1
+file1: ASCII text
+~/SystemCommands$ cd //usr///bin
+//usr/bin$ cd /
+/$ cd ..
+/$ pwd
+/
+/$ cd ..
+/$ pwd
+/
+/$ ls -l
+total 44
+lrwxrwxrwx     1 root   root       7 Jul 23  2021 bin -> usr/bin
+drwxr-xr-x     2 root   root    4096 Apr 15  2020 boot
+drwxr-xr-x     5 root   root     340 Jan  9 17:32 dev
+drwxr-xr-x     1 root   root    4096 Jan  9 17:32 etc
+drwxr-xr-x     1 root   root    4096 Mar 10  2022 home
+drwxr-xr-x     2 root   root    4096 Mar 10  2022 inject
+drwxr-xr-x     5 nobody nogroup  100 Jan  9 17:32 io
+lrwxrwxrwx     1 root   root       7 Jul 23  2021 lib -> usr/lib
+lrwxrwxrwx     1 root   root       9 Jul 23  2021 lib32 -> usr/lib32
+lrwxrwxrwx     1 root   root       9 Jul 23  2021 lib64 -> usr/lib64
+lrwxrwxrwx     1 root   root      10 Jul 23  2021 libx32 -> usr/libx32
+drwxr-xr-x     2 root   root    4096 Jul 23  2021 media
+drwxr-xr-x     1 root   root    4096 Mar 10  2022 mnt
+drwxrwxrwx     1 runner runner    16 Jan  9 17:32 nix
+drwxr-xr-x     2 root   root    4096 Jul 23  2021 opt
+dr-xr-xr-x 19928 nobody nogroup    0 Jan  9 17:32 proc
+~/SystemCommands/NewFolder$ 
+~/SystemCommands/NewFolder$ less file2 
+~/SystemCommands/NewFolder$ cat file2
+kya hal he beta~/SystemCommands/NewFolder$ more file2
+kya hal he beta
+
+~/SystemCommands/NewFolder$ head file2 
+kya hal he beta~/SystemCommands/NewFolder$ head -n 5 file2 
+kya hal he beta~/SystemCommands/NewFolder$ tail file2
+kya hal he beta~/SystemCommands/NewFolder$ tail -n 5 file2
+kya hal he beta~/SystemCommands/NewFolder$ wc file2
+ 0  4 15 file2
+~/SystemCommands/NewFolder$ ls -l file2 
+-rwx------ 1 runner runner 15 Jan  9 18:08 file2
+~/SystemCommands/NewFolder$ wc -l file2 
+0 file2
+~/SystemCommands/NewFolder$ which less
+/nix/store/2yyqkr25dw3f18yl7xf5ndffk7950285-less-608/bin/less
+~/SystemCommands/NewFolder$ which more
+/nix/store/r4wcqdk2ns6xv03m3zqw567fp7sjl02c-util-linux-2.38.1-bin/bin/more
+
+ls -l /nix/store/r4wcqdk2ns6xv03m3zqw567fp7sjl02c-util-linux-2.38.1-bin/bin/more
+-r-xr-xr-x 1 runner runner 68272 Jan  1  1970 /nix/store/r4wcqdk2ns6xv03m3zqw567fp7sjl02c-util-linux-2.38.1-bin/bin/more
