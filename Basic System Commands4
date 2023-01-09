@@ -52,5 +52,5 @@ kya hal he beta~/SystemCommands/NewFolder$ wc file2
 ~/SystemCommands/NewFolder$ which more
 /nix/store/r4wcqdk2ns6xv03m3zqw567fp7sjl02c-util-linux-2.38.1-bin/bin/more
 
-ls -l /nix/store/r4wcqdk2ns6xv03m3zqw567fp7sjl02c-util-linux-2.38.1-bin/bin/more
+~/SystemCommands/NewFolder$ ls -l /nix/store/r4wcqdk2ns6xv03m3zqw567fp7sjl02c-util-linux-2.38.1-bin/bin/more
 -r-xr-xr-x 1 runner runner 68272 Jan  1  1970 /nix/store/r4wcqdk2ns6xv03m3zqw567fp7sjl02c-util-linux-2.38.1-bin/bin/more
