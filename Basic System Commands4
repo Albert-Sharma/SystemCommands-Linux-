@@ -54,3 +54,9 @@ kya hal he beta~/SystemCommands/NewFolder$ wc file2
 
 ~/SystemCommands/NewFolder$ ls -l /nix/store/r4wcqdk2ns6xv03m3zqw567fp7sjl02c-util-linux-2.38.1-bin/bin/more
 -r-xr-xr-x 1 runner runner 68272 Jan  1  1970 /nix/store/r4wcqdk2ns6xv03m3zqw567fp7sjl02c-util-linux-2.38.1-bin/bin/more
+
+~/SystemCommands/NewFolder$ ls -l /nix/store/26g7nm0ps69xdyn1am9rmvrfg2zkkbmg-man-db-2.10.2/bin/whatis
+-r-xr-xr-x 1 runner runner 863 Jan  1  1970 /nix/store/26g7nm0ps69xdyn1am9rmvrfg2zkkbmg-man-db-2.10.2/bin/whatis
+~/SystemCommands/NewFolder$ ls -l /nix/store/26g7nm0ps69xdyn1am9rmvrfg2zkkbmg-man-db-2.10.2/bin/apropos
+lrwxrwxrwx 1 runner runner 6 Jan  1  1970 /nix/store/26g7nm0ps69xdyn1am9rmvrfg2zkkbmg-man-db-2.10.2/bin/apropos -> whatis
+~/SystemCommands/NewFolder$ 
