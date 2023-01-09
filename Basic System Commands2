@@ -1,0 +1,79 @@
+~/SystemCommands$ pwd
+/home/runner/SystemCommands
+~/SystemCommands$ ls
+main.sh  NewFolder  replit.nix
+~/SystemCommands$ ls -l
+total 8
+-rw-r--r-- 1 runner runner  16 Dec  9 20:17 main.sh
+drwx------ 1 runner runner   0 Jan  9 17:26 NewFolder
+-rw-r--r-- 1 runner runner 107 Jan  9 17:15 replit.nix
+~/SystemCommands$ cd NewFolder
+~/SystemCommands/NewFolder$ ls
+~/SystemCommands/NewFolder$ touch file1
+~/SystemCommands/NewFolder$ ls
+file1
+~/SystemCommands/NewFolder$ ls -l
+total 0
+-rw-r--r-- 1 runner runner 0 Jan  9 17:37 file1
+~/SystemCommands/NewFolder$ cp file1 newfile1
+~/SystemCommands/NewFolder$ ls
+file1  newfile1
+~/SystemCommands/NewFolder$ ls -l
+total 0
+-rw-r--r-- 1 runner runner 0 Jan  9 17:37 file1
+-rw-r--r-- 1 runner runner 0 Jan  9 17:38 newfile1
+~/SystemCommands/NewFolder$ mv newfile1 ..
+~/SystemCommands/NewFolder$ ls
+file1
+~/SystemCommands/NewFolder$ cd ..
+~/SystemCommands$ ls
+main.sh  newfile1  NewFolder  replit.nix
+~/SystemCommands$ mv newfile1 renamefile1
+~/SystemCommands$ ls
+main.sh  NewFolder  renamefile1  replit.nix
+~/SystemCommands$ touch file2
+~/SystemCommands$ ls -l
+total 8
+-rw-r--r-- 1 runner runner   0 Jan  9 17:40 file2
+-rw-r--r-- 1 runner runner  16 Dec  9 20:17 main.sh
+drwx------ 1 runner runner  10 Jan  9 17:38 NewFolder
+-rw-r--r-- 1 runner runner   0 Jan  9 17:38 renamefile1
+-rw-r--r-- 1 runner runner 107 Jan  9 17:15 replit.nix
+~/SystemCommands$ chmod 700 file2
+~/SystemCommands$ ls -l
+total 8
+-rwx------ 1 runner runner   0 Jan  9 17:40 file2
+-rw-r--r-- 1 runner runner  16 Dec  9 20:17 main.sh
+drwx------ 1 runner runner  10 Jan  9 17:38 NewFolder
+-rw-r--r-- 1 runner runner   0 Jan  9 17:38 renamefile1
+-rw-r--r-- 1 runner runner 107 Jan  9 17:15 replit.nix
+~/SystemCommands$ mv file2 'file two'
+~/SystemCommands$ ls -l
+total 8
+-rwx------ 1 runner runner   0 Jan  9 17:40 'file two'
+-rw-r--r-- 1 runner runner  16 Dec  9 20:17  main.sh
+drwx------ 1 runner runner  10 Jan  9 17:38  NewFolder
+-rw-r--r-- 1 runner runner   0 Jan  9 17:38  renamefile1
+-rw-r--r-- 1 runner runner 107 Jan  9 17:15  replit.nix
+~/SystemCommands$ rm 'file two'
+~/SystemCommands$ ls -l
+total 8
+-rw-r--r-- 1 runner runner  16 Dec  9 20:17 main.sh
+drwx------ 1 runner runner  10 Jan  9 17:38 NewFolder
+-rw-r--r-- 1 runner runner   0 Jan  9 17:38 renamefile1
+-rw-r--r-- 1 runner runner 107 Jan  9 17:15 replit.nix
+~/SystemCommands$ man rm
+No manual entry for rm
+~/SystemCommands$ alias rm="rm -i"
+~/SystemCommands$ ls -l
+total 8
+-rw-r--r-- 1 runner runner  16 Dec  9 20:17 main.sh
+drwx------ 1 runner runner  10 Jan  9 17:38 NewFolder
+-rw-r--r-- 1 runner runner   0 Jan  9 17:38 renamefile1
+-rw-r--r-- 1 runner runner 107 Jan  9 17:15 replit.nix
+~/SystemCommands$ cd NewFolder
+~/SystemCommands/NewFolder$ ls
+file1
+~/SystemCommands/NewFolder$ rm file1
+rm: remove regular empty file 'file1'? Y
+~/SystemCommands/NewFolder$ ls
