@@ -89,3 +89,21 @@ total 0
 256 drwxr-xr-x 1 runner runner 110 Jan  9 17:44 ..
 269 -rwx------ 1 runner runner   0 Jan  9 17:45 file2
 270 drwxr-xr-x 1 runner runner   0 Jan  9 17:47 newfolder2
+
+~/SystemCommands$ ls
+file1  main.sh  NewFolder  renamefile1  replit.nix
+~/SystemCommands$ ls -l NewFolder
+total 4
+-rwx------ 1 runner runner   0 Jan  9 17:45 file2
+drwxr-xr-x 1 runner runner   0 Jan  9 17:47 newfolder2
+-rw-r--r-- 1 runner runner 159 Jan  9 17:57 python.py
+~/SystemCommands$ ls -ld NewFolder/
+drwx------ 1 runner runner 48 Jan  9 17:57 NewFolder/
+~/SystemCommands$ ls -ldi NewFolder
+264 drwx------ 1 runner runner 48 Jan  9 17:57 NewFolder
+~/SystemCommands$ ls -l NewFolder -di
+264 drwx------ 1 runner runner 48 Jan  9 17:57 NewFolder
+~/SystemCommands$ ls NewFolder -ldi
+264 drwx------ 1 runner runner 48 Jan  9 17:57 NewFolder
+~/SystemCommands$ ls -l NewFolder --directory --inode
+264 drwx------ 1 runner runner 48 Jan  9 17:57 NewFolder
