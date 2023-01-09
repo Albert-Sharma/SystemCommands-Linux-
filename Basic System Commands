@@ -1,0 +1,193 @@
+#Run these commands in bash / terminal
+
+/$ date
+Mon 09 Jan 2023 04:43:10 PM UTC
+/$ date month
+date: invalid date ‘month’
+/$ date -R
+Mon, 09 Jan 2023 16:43:40 +0000
+/$ man date
+No manual entry for date
+~/SystemCommands$ cal
+cal: command not installed. Multiple versions of this command were found in Nix.
+Select one to run (or press Ctrl-C to cancel):
+Adding util-linux.bin to replit.nix
+success
+/nix/store/alr4kn6iwylsbd9f7j92nsykpgzn3023-util-linux-2.36.2-bin
+    January 2023    
+Su Mo Tu We Th Fr Sa
+ 1  2  3  4  5  6  7
+ 8  9 10 11 12 13 14
+15 16 17 18 19 20 21
+22 23 24 25 26 27 28
+29 30 31            
+                    
+Detected change in environment, reloading shell...
+~/SystemCommands$ cal january 2023
+    January 2023    
+Su Mo Tu We Th Fr Sa
+ 1  2  3  4  5  6  7
+ 8  9 10 11 12 13 14
+15 16 17 18 19 20 21
+22 23 24 25 26 27 28
+29 30 31            
+                    
+~/SystemCommands$ cal 3 2023
+     March 2023     
+Su Mo Tu We Th Fr Sa
+          1  2  3  4
+ 5  6  7  8  9 10 11
+12 13 14 15 16 17 18
+19 20 21 22 23 24 25
+26 27 28 29 30 31   
+                    
+~/SystemCommands$ ncal
+bash: ncal: command not found
+~/SystemCommands$ free
+              total        used        free      shared  buff/cache   available
+Mem:       65852732    19115184    17424140      103112    29313408    46667424
+Swap:             0           0           0
+~/SystemCommands$ free -h
+              total        used        free      shared  buff/cache   available
+Mem:           62Gi        18Gi        16Gi       100Mi        28Gi        44Gi
+Swap:            0B          0B          0B
+~/SystemCommands$ groups
+runner
+~/SystemCommands$ pwd
+/home/runner/SystemCommands
+~/SystemCommands$ ls -s
+total 8
+4 main.sh  4 replit.nix
+~/SystemCommands$ ls-l
+bash: ls-l: command not found
+~/SystemCommands$ ls - l
+ls: cannot access '-': No such file or directory
+ls: cannot access 'l': No such file or directory
+~/SystemCommands$ ls
+main.sh  replit.nix
+~/SystemCommands$ cd ..
+~$ ls
+SystemCommands
+~$ cd ..
+/home$ ls
+runner
+/home$ cd ..
+/$ ls
+bin   dev  home    io   lib32  libx32  mnt  opt   repl  run   srv    sys  usr
+boot  etc  inject  lib  lib64  media   nix  proc  root  sbin  store  tmp  var
+/$ ls - l
+ls: cannot access '-': No such file or directory
+ls: cannot access 'l': No such file or directory
+/$ ls
+bin   dev  home    io   lib32  libx32  mnt  opt   repl  run   srv    sys  usr
+boot  etc  inject  lib  lib64  media   nix  proc  root  sbin  store  tmp  var
+/$ ls-l
+bash: ls-l: command not found
+/$ ls -l
+total 44
+lrwxrwxrwx     1 root   root       7 Jul 23  2021 bin -> usr/bin
+drwxr-xr-x     2 root   root    4096 Apr 15  2020 boot
+drwxr-xr-x     5 root   root     340 Jan  9 16:35 dev
+drwxr-xr-x     1 root   root    4096 Jan  9 16:35 etc
+drwxr-xr-x     1 root   root    4096 Mar 10  2022 home
+drwxr-xr-x     2 root   root    4096 Mar 10  2022 inject
+drwxr-xr-x     5 nobody nogroup  100 Jan  9 16:35 io
+lrwxrwxrwx     1 root   root       7 Jul 23  2021 lib -> usr/lib
+lrwxrwxrwx     1 root   root       9 Jul 23  2021 lib32 -> usr/lib32
+lrwxrwxrwx     1 root   root       9 Jul 23  2021 lib64 -> usr/lib64
+lrwxrwxrwx     1 root   root      10 Jul 23  2021 libx32 -> usr/libx32
+drwxr-xr-x     2 root   root    4096 Jul 23  2021 media
+drwxr-xr-x     1 root   root    4096 Mar 10  2022 mnt
+drwxrwxrwx     1 runner runner    16 Jan  9 16:35 nix
+drwxr-xr-x     2 root   root    4096 Jul 23  2021 opt
+dr-xr-xr-x 19929 nobody nogroup    0 Jan  9 16:35 proc
+dr-xr-xr-x     1 nobody nogroup   10 Jan  9 16:35 repl
+drwx------     2 root   root    4096 Jul 23  2021 root
+drwxrwxrwx     1 runner runner    10 Jan  9 16:35 run
+lrwxrwxrwx     1 root   root       8 Jul 23  2021 sbin -> usr/sbin
+drwxr-xr-x     2 root   root    4096 Jul 23  2021 srv
+drwxr-xr-x     1 runner runner   176 Jan  9 17:15 store
+dr-xr-xr-x    13 nobody nogroup    0 Jan  9 16:35 sys
+drwxrwxrwx     1 runner runner   106 Jan  9 17:15 tmp
+drwxr-xr-x     1 root   root    4096 Jul 23  2021 usr
+drwxr-xr-x     1 root   root    4096 Jul 23  2021 var
+/$ mkdir NewFolder
+mkdir: cannot create directory ‘NewFolder’: Read-only file system
+/$ ls
+bin   dev  home    io   lib32  libx32  mnt  opt   repl  run   srv    sys  usr
+boot  etc  inject  lib  lib64  media   nix  proc  root  sbin  store  tmp  var
+/$ ls -l
+total 44
+lrwxrwxrwx     1 root   root       7 Jul 23  2021 bin -> usr/bin
+drwxr-xr-x     2 root   root    4096 Apr 15  2020 boot
+drwxr-xr-x     5 root   root     340 Jan  9 16:35 dev
+drwxr-xr-x     1 root   root    4096 Jan  9 16:35 etc
+drwxr-xr-x     1 root   root    4096 Mar 10  2022 home
+drwxr-xr-x     2 root   root    4096 Mar 10  2022 inject
+drwxr-xr-x     5 nobody nogroup  100 Jan  9 16:35 io
+lrwxrwxrwx     1 root   root       7 Jul 23  2021 lib -> usr/lib
+lrwxrwxrwx     1 root   root       9 Jul 23  2021 lib32 -> usr/lib32
+lrwxrwxrwx     1 root   root       9 Jul 23  2021 lib64 -> usr/lib64
+lrwxrwxrwx     1 root   root      10 Jul 23  2021 libx32 -> usr/libx32
+drwxr-xr-x     2 root   root    4096 Jul 23  2021 media
+drwxr-xr-x     1 root   root    4096 Mar 10  2022 mnt
+drwxrwxrwx     1 runner runner    16 Jan  9 16:35 nix
+drwxr-xr-x     2 root   root    4096 Jul 23  2021 opt
+dr-xr-xr-x 19938 nobody nogroup    0 Jan  9 16:35 proc
+dr-xr-xr-x     1 nobody nogroup   10 Jan  9 16:35 repl
+drwx------     2 root   root    4096 Jul 23  2021 root
+drwxrwxrwx     1 runner runner    10 Jan  9 16:35 run
+lrwxrwxrwx     1 root   root       8 Jul 23  2021 sbin -> usr/sbin
+drwxr-xr-x     2 root   root    4096 Jul 23  2021 srv
+drwxr-xr-x     1 runner runner   176 Jan  9 17:15 store
+dr-xr-xr-x    13 nobody nogroup    0 Jan  9 16:35 sys
+drwxrwxrwx     1 runner runner   106 Jan  9 17:15 tmp
+drwxr-xr-x     1 root   root    4096 Jul 23  2021 usr
+drwxr-xr-x     1 root   root    4096 Jul 23  2021 var
+/$ cd home
+/home$ ls
+runner
+/home$ cd runner/
+~$ ls
+SystemCommands
+~$ cd sys
+bash: cd: sys: No such file or directory
+~$ cd SystemCommands/
+~/SystemCommands$ ls
+main.sh  replit.nix
+~/SystemCommands$ mkdir NewFolder
+~/SystemCommands$ ls
+main.sh  NewFolder  replit.nix
+~/SystemCommands$ ls -l
+total 8
+-rw-r--r-- 1 runner runner  16 Dec  9 20:17 main.sh
+drwxr-xr-x 1 runner runner   0 Jan  9 17:26 NewFolder
+-rw-r--r-- 1 runner runner 107 Jan  9 17:15 replit.nix
+~/SystemCommands$ pwd
+/home/runner/SystemCommands
+~/SystemCommands$ cd NewFolder
+~/SystemCommands/NewFolder$ chmod file1
+chmod: missing operand after ‘file1’
+Try 'chmod --help' for more information.
+~/SystemCommands/NewFolder$ ls -l
+total 0
+~/SystemCommands/NewFolder$ cd ..
+~/SystemCommands$ ls
+main.sh  NewFolder  replit.nix
+~/SystemCommands$ ls -l
+total 8
+-rw-r--r-- 1 runner runner  16 Dec  9 20:17 main.sh
+drwxr-xr-x 1 runner runner   0 Jan  9 17:26 NewFolder
+-rw-r--r-- 1 runner runner 107 Jan  9 17:15 replit.nix
+~/SystemCommands$ chmod g-r NewFolder
+~/SystemCommands$ ls -l
+total 8
+-rw-r--r-- 1 runner runner  16 Dec  9 20:17 main.sh
+drwx--xr-x 1 runner runner   0 Jan  9 17:26 NewFolder
+-rw-r--r-- 1 runner runner 107 Jan  9 17:15 replit.nix
+~/SystemCommands$ chmod 700 NewFolder
+~/SystemCommands$ ls -l
+total 8
+-rw-r--r-- 1 runner runner  16 Dec  9 20:17 main.sh
+drwx------ 1 runner runner   0 Jan  9 17:26 NewFolder
+-rw-r--r-- 1 runner runner 107 Jan  9 17:15 replit.nix
