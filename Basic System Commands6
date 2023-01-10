@@ -1,0 +1,40 @@
+~/SystemCommands$ ls
+file1  main.sh  NewFolder  renamefile1  replit.nix
+~/SystemCommands$ touch file2
+~/SystemCommands$ touch file3 file4 file5
+~/SystemCommands$ mkdir mydir
+~/SystemCommands$ cp file2 mydir
+~/SystemCommands$ cd mydir
+~/SystemCommands/mydir$ ls
+file2
+~/SystemCommands/mydir$ cd ..
+~/SystemCommands$ ls
+file1  file2  file3  file4  file5  main.sh  mydir  NewFolder  renamefile1  replit.nix
+~/SystemCommands$ cp file1 file2
+~/SystemCommands$ ls
+file1  file2  file3  file4  file5  main.sh  mydir  NewFolder  renamefile1  replit.nix
+~/SystemCommands$ alias cp='cp -i'
+~/SystemCommands$ cp file1 file2
+cp: overwrite 'file2'? Y
+~/SystemCommands$ rm file1
+~/SystemCommands$ cd mydir/
+~/SystemCommands/mydir$ ls
+file2
+~/SystemCommands/mydir$ rm file2 
+~/SystemCommands/mydir$ cd ..
+~/SystemCommands$ rm mydir
+rm: cannot remove 'mydir': Is a directory
+~/SystemCommands$ ls
+file2  file3  file4  file5  main.sh  mydir  NewFolder  renamefile1  replit.nix
+~/SystemCommands$ rmdir mydir
+~/SystemCommands$ ls
+file2  file3  file4  file5  main.sh  NewFolder  renamefile1  replit.nix
+~/SystemCommands$ mkdir newdir
+~/SystemCommands$ cd newdir
+~/SystemCommands/newdir$ touch file1
+~/SystemCommands/newdir$ cd ..
+~/SystemCommands$ rm newdir
+rm: cannot remove 'newdir': Is a directory
+~/SystemCommands$ rm -r newdir
+~/SystemCommands$ ls
+file2  file3  file4  file5  main.sh  NewFolder  renamefile1  replit.nix
