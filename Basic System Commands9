@@ -42,3 +42,25 @@ overlay                                                  2.4G  483M  1.9G  21% /
 overlay                                                  2.4G  483M  1.9G  21% /home/runner/.npm
 overlay                                                  2.4G  483M  1.9G  21% /home/runner/.cache/pip
 /dev/conman/conman-repl-filesystem-volume-3006           2.4G  908K  2.4G   1% /home/runner/SystemCommands
+/proc$ cd /
+/$ cd /sys
+/sys$ ls -l
+total 0
+drwxr-xr-x   2 nobody nogroup  0 Jan 10 19:15 block
+drwxr-xr-x  40 nobody nogroup  0 Jan 10 19:15 bus
+drwxr-xr-x  70 nobody nogroup  0 Jan 10 18:22 class
+drwxr-xr-x   4 nobody nogroup  0 Jan 10 19:15 dev
+drwxr-xr-x  15 nobody nogroup  0 Jan 10 18:22 devices
+drwxrwxrwt   2 root   root    40 Jan 10 18:18 firmware
+drwxr-xr-x  10 nobody nogroup  0 Jan 10 18:18 fs
+drwxr-xr-x   2 nobody nogroup  0 Jan 10 19:15 hypervisor
+drwxr-xr-x  17 nobody nogroup  0 Jan 10 18:18 kernel
+drwxr-xr-x 174 nobody nogroup  0 Jan 10 19:15 module
+drwxr-xr-x   3 nobody nogroup  0 Jan 10 19:15 power
+/sys$ cd bus
+/sys/bus$ cd usb
+.../bus/usb$ ls
+devices  drivers  drivers_autoprobe  drivers_probe  uevent
+.../bus/usb$ cd devices
+.../usb/devices$ ls -l
+total 0
