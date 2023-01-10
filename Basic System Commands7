@@ -1,0 +1,29 @@
+~/SystemCommands$ ls
+file2  file3  file4  file5  main.sh  NewFolder  renamefile1  replit.nix
+~/SystemCommands$ mkdir mydir
+~/SystemCommands$ cd mydir
+~/SystemCommands/mydir$ touch file1 file 2
+~/SystemCommands/mydir$ ls
+2  file  file1
+~/SystemCommands/mydir$ rm 2
+~/SystemCommands/mydir$ ls
+file  file1
+~/SystemCommands/mydir$ ls -l mydir
+ls: cannot access 'mydir': No such file or directory
+~/SystemCommands/mydir$ cd ..
+~/SystemCommands$ ls -l mydir
+total 0
+-rw-r--r-- 1 runner runner 0 Jan 10 18:52 file
+-rw-r--r-- 1 runner runner 0 Jan 10 18:52 file1
+~/SystemCommands$ cp mydir mydir2
+cp: -r not specified; omitting directory 'mydir'
+~/SystemCommands$ cp -r mydir mydir2
+~/SystemCommands$ ls
+file2  file3  file4  file5  main.sh  mydir  mydir2  NewFolder  renamefile1  replit.nix
+~/SystemCommands$ ls -l mydir2
+total 0
+-rw-r--r-- 1 runner runner 0 Jan 10 18:53 file
+-rw-r--r-- 1 runner runner 0 Jan 10 18:53 file1
+~/SystemCommands$ mv mydir mydir3
+~/SystemCommands$ ls
+file2  file3  file4  file5  main.sh  mydir2  mydir3  NewFolder  renamefile1  replit.nix
