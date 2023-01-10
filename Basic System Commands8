@@ -1,0 +1,113 @@
+~/SystemCommands$ pwd
+/home/runner/SystemCommands
+~/SystemCommands$ help
+GNU bash, version 5.1.12(1)-release (x86_64-pc-linux-gnu)
+These shell commands are defined internally.  Type `help' to see this list.
+Type `help name' to find out more about the function `name'.
+Use `info bash' to find out more about the shell in general.
+Use `man -k' or `info' to find out more about commands not in this list.
+
+A star (*) next to a name means that the command is disabled.
+
+ job_spec [&]                                 history [-c] [-d offset] [n] or history ->
+ (( expression ))                             if COMMANDS; then COMMANDS; [ elif COMMAN>
+ . filename [arguments]                       jobs [-lnprs] [jobspec ...] or jobs -x co>
+ :                                            kill [-s sigspec | -n signum | -sigspec] >
+ [ arg... ]                                   let arg [arg ...]
+ [[ expression ]]                             local [option] name[=value] ...
+ alias [-p] [name[=value] ... ]               logout [n]
+ bg [job_spec ...]                            mapfile [-d delim] [-n count] [-O origin]>
+ bind [-lpsvPSVX] [-m keymap] [-f filename]>  popd [-n] [+N | -N]
+ break [n]                                    printf [-v var] format [arguments]
+ builtin [shell-builtin [arg ...]]            pushd [-n] [+N | -N | dir]
+ caller [expr]                                pwd [-LP]
+ case WORD in [PATTERN [| PATTERN]...) COMM>  read [-ers] [-a array] [-d delim] [-i tex>
+ cd [-L|[-P [-e]] [-@]] [dir]                 readarray [-d delim] [-n count] [-O origi>
+ command [-pVv] command [arg ...]             readonly [-aAf] [name[=value] ...] or rea>
+ compgen [-abcdefgjksuv] [-o option] [-A ac>  return [n]
+ complete [-abcdefgjksuv] [-pr] [-DEI] [-o >  select NAME [in WORDS ... ;] do COMMANDS;>
+ compopt [-o|+o option] [-DEI] [name ...]     set [-abefhkmnptuvxBCHP] [-o option-name]>
+ continue [n]                                 shift [n]
+ coproc [NAME] command [redirections]         shopt [-pqsu] [-o] [optname ...]
+ declare [-aAfFgiIlnrtux] [-p] [name[=value>  source filename [arguments]
+ dirs [-clpv] [+N] [-N]                       suspend [-f]
+ disown [-h] [-ar] [jobspec ... | pid ...]    test [expr]
+ echo [-neE] [arg ...]                        time [-p] pipeline
+ enable [-a] [-dnps] [-f filename] [name ..>  times
+ eval [arg ...]                               trap [-lp] [[arg] signal_spec ...]
+ exec [-cl] [-a name] [command [argument ..>  true
+ exit [n]                                     type [-afptP] name [name ...]
+ export [-fn] [name[=value] ...] or export >  typeset [-aAfFgiIlnrtux] [-p] name[=value>
+ false                                        ulimit [-SHabcdefiklmnpqrstuvxPT] [limit]
+ fc [-e ename] [-lnr] [first] [last] or fc >  umask [-p] [-S] [mode]
+~/SystemCommands$ pwd
+/home/runner/SystemCommands
+~/SystemCommands$ pwd
+/home/runner/SystemCommands
+~/SystemCommands$ ls
+file2  file3  file4  file5  main.sh  mydir2  mydir3  NewFolder  renamefile1  replit.nix
+~/SystemCommands$ ls -l
+total 12
+-rw-r--r-- 1 runner runner  24 Jan 10 18:47 file2
+-rw-r--r-- 1 runner runner   0 Jan 10 18:46 file3
+-rw-r--r-- 1 runner runner   0 Jan 10 18:46 file4
+-rw-r--r-- 1 runner runner   0 Jan 10 18:46 file5
+-rw-r--r-- 1 runner runner  16 Dec  9 20:17 main.sh
+drwxr-xr-x 1 runner runner  18 Jan 10 18:53 mydir2
+drwxr-xr-x 1 runner runner  18 Jan 10 18:52 mydir3
+drwx------ 1 runner runner  48 Jan  9 18:08 NewFolder
+-rw-r--r-- 1 runner runner   0 Jan  9 17:38 renamefile1
+-rw-r--r-- 1 runner runner 157 Jan 10 18:38 replit.nix
+~/SystemCommands$ touch file 6
+~/SystemCommands$ rm 6
+~/SystemCommands$ man ln
+No manual entry for ln
+~/SystemCommands$ ln -s file file6
+~/SystemCommands$ ls -l
+total 16
+-rw-r--r-- 1 runner runner   0 Jan 10 18:56 file
+-rw-r--r-- 1 runner runner  24 Jan 10 18:47 file2
+-rw-r--r-- 1 runner runner   0 Jan 10 18:46 file3
+-rw-r--r-- 1 runner runner   0 Jan 10 18:46 file4
+-rw-r--r-- 1 runner runner   0 Jan 10 18:46 file5
+lrwxrwxrwx 1 runner runner   4 Jan 10 18:56 file6 -> file
+-rw-r--r-- 1 runner runner  16 Dec  9 20:17 main.sh
+drwxr-xr-x 1 runner runner  18 Jan 10 18:53 mydir2
+drwxr-xr-x 1 runner runner  18 Jan 10 18:52 mydir3
+drwx------ 1 runner runner  48 Jan  9 18:08 NewFolder
+-rw-r--r-- 1 runner runner   0 Jan  9 17:38 renamefile1
+-rw-r--r-- 1 runner runner 157 Jan 10 18:38 replit.nix
+~/SystemCommands$ ls -li
+total 16
+285 -rw-r--r-- 1 runner runner   0 Jan 10 18:56 file
+270 -rw-r--r-- 1 runner runner  24 Jan 10 18:47 file2
+271 -rw-r--r-- 1 runner runner   0 Jan 10 18:46 file3
+272 -rw-r--r-- 1 runner runner   0 Jan 10 18:46 file4
+273 -rw-r--r-- 1 runner runner   0 Jan 10 18:46 file5
+287 lrwxrwxrwx 1 runner runner   4 Jan 10 18:56 file6 -> file
+263 -rw-r--r-- 1 runner runner  16 Dec  9 20:17 main.sh
+282 drwxr-xr-x 1 runner runner  18 Jan 10 18:53 mydir2
+278 drwxr-xr-x 1 runner runner  18 Jan 10 18:52 mydir3
+264 drwx------ 1 runner runner  48 Jan  9 18:08 NewFolder
+265 -rw-r--r-- 1 runner runner   0 Jan  9 17:38 renamefile1
+261 -rw-r--r-- 1 runner runner 157 Jan 10 18:38 replit.nix
+~/SystemCommands$ ln file1 file3
+ln: failed to access 'file1': No such file or directory
+~/SystemCommands$ ln file2 file3
+ln: failed to create hard link 'file3': File exists
+~/SystemCommands$ ln file2 file7
+~/SystemCommands$ ls -li
+total 20
+285 -rw-r--r-- 1 runner runner   0 Jan 10 18:56 file
+270 -rw-r--r-- 2 runner runner  24 Jan 10 18:47 file2
+271 -rw-r--r-- 1 runner runner   0 Jan 10 18:46 file3
+272 -rw-r--r-- 1 runner runner   0 Jan 10 18:46 file4
+273 -rw-r--r-- 1 runner runner   0 Jan 10 18:46 file5
+287 lrwxrwxrwx 1 runner runner   4 Jan 10 18:56 file6 -> file
+270 -rw-r--r-- 2 runner runner  24 Jan 10 18:47 file7
+263 -rw-r--r-- 1 runner runner  16 Dec  9 20:17 main.sh
+282 drwxr-xr-x 1 runner runner  18 Jan 10 18:53 mydir2
+278 drwxr-xr-x 1 runner runner  18 Jan 10 18:52 mydir3
+264 drwx------ 1 runner runner  48 Jan  9 18:08 NewFolder
+265 -rw-r--r-- 1 runner runner   0 Jan  9 17:38 renamefile1
+261 -rw-r--r-- 1 runner runner 157 Jan 10 18:38 replit.nix
