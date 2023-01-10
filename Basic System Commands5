@@ -1,0 +1,32 @@
+~/SystemCommands$ ps
+    PID TTY          TIME CMD
+     17 pts/1    00:00:00 bash
+   1303 pts/1    00:00:00 ps
+~/SystemCommands$ info
+info: command not installed. Multiple versions of this command were found in Nix.
+Select one to run (or press Ctrl-C to cancel):
+Adding texinfoInteractive to replit.nix
+success
+/nix/store/i0jlqh439ay3601l08cq7c9cp9vzjgs8-texinfo-interactive-6.7
+Detected change in environment, reloading shell...
+~/SystemCommands$ type type
+type is a shell builtin
+~/SystemCommands$ type ls
+ls is /nix/store/a7gvj343m05j2s32xcnwr35v31ynlypr-coreutils-9.1/bin/ls
+~/SystemCommands$ ls -l /nix/store/a7gvj343m05j2s32xcnwr35v31ynlypr-coreutils-9.1/bin/ls
+lrwxrwxrwx 1 runner runner 9 Jan  1  1970 /nix/store/a7gvj343m05j2s32xcnwr35v31ynlypr-coreutils-9.1/bin/ls -> coreutils
+~/SystemCommands$ file  /nix/store/a7gvj343m05j2s32xcnwr35v31ynlypr-coreutils-9.1/bin/ls
+/nix/store/a7gvj343m05j2s32xcnwr35v31ynlypr-coreutils-9.1/bin/ls: symbolic link to coreutils
+~/SystemCommands$ type help
+help is a shell builtin
+~/SystemCommands$ alias ll='ls -l'
+~/SystemCommands$ ll
+total 12
+-rwx------ 1 runner runner  24 Jan  9 17:51 file1
+-rw-r--r-- 1 runner runner  16 Dec  9 20:17 main.sh
+drwx------ 1 runner runner  48 Jan  9 18:08 NewFolder
+-rw-r--r-- 1 runner runner   0 Jan  9 17:38 renamefile1
+-rw-r--r-- 1 runner runner 157 Jan 10 18:38 replit.nix
+~/SystemCommands$ type ll
+ll is aliased to `ls -l'
+~/SystemCommands$ unalias ll
