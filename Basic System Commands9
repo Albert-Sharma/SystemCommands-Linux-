@@ -1,0 +1,44 @@
+/proc$ df
+Filesystem                                                1K-blocks        Used  Available Use% Mounted on
+overlay                                                  1719415016    43586212 1588413612   3% /
+tmpfs                                                         65536           0      65536   0% /dev
+tmpfs                                                      32926364           0   32926364   0% /sys/fs/cgroup
+overlay                                                     2469888      494156    1971448  21% /nix
+tmpfs                                                       6585276       18084    6567192   1% /io
+/dev/conman/conman-repl-filesystem-volume-2975              2469888      494156    1971448  21% /tmp
+/dev/root                                                  25215872    16353916    8845572  65% /mnt/cacache
+shm                                                           65536           0      65536   0% /dev/shm
+/dev/mapper/docker                                       1719415016    43586212 1588413612   3% /etc/hosts
+/dev/disk/by-id/google-cacache-1670882622791-us-east1-b 16909131676 10643631552 6265483740  63% /mnt/cacache/pip
+devtmpfs                                                   32922044           0   32922044   0% /dev/tty
+tmpfs                                                      32926364           0   32926364   0% /proc/acpi
+tmpfs                                                      32926364           0   32926364   0% /proc/scsi
+tmpfs                                                      32926364           0   32926364   0% /sys/firmware
+overlay                                                     2469888      494156    1971448  21% /home/runner
+overlay                                                     2469888      494156    1971448  21% /home/runner/.cargo/registry
+overlay                                                     2469888      494156    1971448  21% /home/runner/.m2/repository
+overlay                                                     2469888      494156    1971448  21% /home/runner/.npm
+overlay                                                     2469888      494156    1971448  21% /home/runner/.cache/pip
+/dev/conman/conman-repl-filesystem-volume-3006              2469888         908    2464696   1% /home/runner/SystemCommands
+/proc$ df -h
+Filesystem                                               Size  Used Avail Use% Mounted on
+overlay                                                  1.7T   42G  1.5T   3% /
+tmpfs                                                     64M     0   64M   0% /dev
+tmpfs                                                     32G     0   32G   0% /sys/fs/cgroup
+overlay                                                  2.4G  483M  1.9G  21% /nix
+tmpfs                                                    6.3G   18M  6.3G   1% /io
+/dev/conman/conman-repl-filesystem-volume-2975           2.4G  483M  1.9G  21% /tmp
+/dev/root                                                 25G   16G  8.5G  65% /mnt/cacache
+shm                                                       64M     0   64M   0% /dev/shm
+/dev/mapper/docker                                       1.7T   42G  1.5T   3% /etc/hosts
+/dev/disk/by-id/google-cacache-1670882622791-us-east1-b   16T   10T  5.9T  63% /mnt/cacache/pip
+devtmpfs                                                  32G     0   32G   0% /dev/tty
+tmpfs                                                     32G     0   32G   0% /proc/acpi
+tmpfs                                                     32G     0   32G   0% /proc/scsi
+tmpfs                                                     32G     0   32G   0% /sys/firmware
+overlay                                                  2.4G  483M  1.9G  21% /home/runner
+overlay                                                  2.4G  483M  1.9G  21% /home/runner/.cargo/registry
+overlay                                                  2.4G  483M  1.9G  21% /home/runner/.m2/repository
+overlay                                                  2.4G  483M  1.9G  21% /home/runner/.npm
+overlay                                                  2.4G  483M  1.9G  21% /home/runner/.cache/pip
+/dev/conman/conman-repl-filesystem-volume-3006           2.4G  908K  2.4G   1% /home/runner/SystemCommands
